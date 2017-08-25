@@ -8,8 +8,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.min.css" integrity="sha256-CDVQJfU+jJGU/oyDzvnzuGXbv0rz+SyBsPQwyn7x/jQ=" crossorigin="anonymous" />
   </head>
   <body>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/16.3.5/Tween.min.js"></script>
+    <app></app>
+
+    <script type="riot/tag" src="app.tag"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/riot/3.6.3/riot+compiler.min.js" integrity="sha256-f/6C/+GBHvB6YE9vMTmZpnqH4JATrsxPXEAGJ3owfow=" crossorigin="anonymous"></script>
+    <script>riot.mount('app')</script>
   </body>
 </html>
