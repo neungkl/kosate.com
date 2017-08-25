@@ -7,7 +7,7 @@
     var startTime = Date.now();
     var timer = null;
     var countMesssage = 0;
-    var timeToSwitch = 1500;
+    var timeToSwitch = opts.time || 1500;
 
     tick() {
       var curTime = Date.now();
@@ -25,9 +25,11 @@
           message: msg + '_'
         })
       }
+
+      requestAnimationFrame(this.tick);
     }
 
-    timer = setInterval(this.tick, 1000 / 60);
+    requestAnimationFrame(this.tick);
 
     this.on('unmount', function() {
       clearTimeout(timer)
