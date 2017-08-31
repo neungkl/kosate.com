@@ -32,7 +32,7 @@
       margin-top: 1em;
     }
     #section-title .external-ref i {
-      font-size: 2.5rem;
+      font-size: 2.5em;
       margin-right: 0.5em;
     }
   </style>

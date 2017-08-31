@@ -11,7 +11,11 @@
       </div>
       <div each={ itemGroup in items } class="columns">
         <div each={ item in itemGroup } class="column is-half">
-          <work-card img={ item.img } title={ item.title } description={ item.description }></work-card>
+          <work-card
+            img={ item.img }
+            title={ item.title }
+            description={ item.description }
+            links={ item.links }></work-card>
         </div>
       </div>
     </div>
@@ -30,47 +34,54 @@
       {
         img: 'run-together.png',
         title: 'Run Together',
-        description: 'asdkaosdkaosd'
+        description: 'Side scrolling game that you must control two characters at the same time to avoid the obstacles.',
+        links: {
+          'android': 'https://play.google.com/store/apps/details?id=com.huskybear.runtogether'
+        }
       },
       {
         img: 'multitask.jpg',
         title: 'How Great Multitask Are You?',
-        description: 'asdkaosdkaosd'
+        description: 'Multitasking game that you must play Pong and Tetris at the same time. Do you able to archieve this?',
+        links: {
+          'external-link': 'https://play.google.com/store/apps/details?id=com.huskybear.runtogether',
+          'github': 'https://github.com/neungkl/multitask-game'
+        }
       },
       {
         img: 'unpredictable.png',
         title: 'Unpredictable',
-        description: 'asdkaosdkaosd'
+        description: 'A maze game that random every 15 seconds which can makes you confuse.'
       },
       {
         img: 'kku-score.png',
         title: 'KKU Score',
-        description: 'asdkaosdkaosd'
+        description: 'Calculator for Khon Kaen University admission scoring.'
       },
       {
         img: 'matches-equation.png',
         title: 'Matches Equation',
-        description: 'asdkaosdkaosd'
+        description: 'Solving tool for fancy task like "how do you move one match to make equation reasonably"'
       },
       {
         img: 'hidden.png',
         title: 'Hidden',
-        description: 'asdkaosdkaosd'
+        description: '25 levels puzzle with minimal hint.'
       },
       {
         img: 'clickhere.jpg',
         title: 'Click Here',
-        description: 'asdkaosdkaosd'
+        description: 'Simply game that you must click "Click Here" button to solve the task.'
       },
       {
         img: 'clickhere2.jpg',
         title: 'Click Here 2',
-        description: 'asdkaosdkaosd'
+        description: 'Simply game that you must DOUBLE click "Click Here" button to solve the task.'
       },
       {
         img: 'substring-clock.png',
         title: 'Substring Clock',
-        description: 'asdkaosdkaosd'
+        description: 'Graphical clock that appear only characters that matchs current time.'
       }
     ];
 
@@ -87,7 +98,6 @@
         items.push(group);
       }
       this.items = items;
-      console.log(this.items);
     });
   </script>
 </section-playground>

@@ -7,7 +7,13 @@
       <div class="column">
         <div class="content">
           <div class="wc-title">{ title }</div>
-          <div class="description font-light">{ description }</div>
+          <div class="description">{ description }</div>
+          <div class="external-link" if={ links }>
+            <div class="external-title">External Link</div>
+            <div class="external-each" each={ link,name in links }>
+              <a href={ link } target="_blank"><i class={ "fa fa-" + name } /></a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -25,12 +31,38 @@
       box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.03);
     }
 
+    a {
+      color: inherit;
+    }
+
     .content {
       padding: 1em 1.5em;
     }
+    .content > div {
+      margin-bottom: 0.5em;
+    }
     .content .wc-title {
-      color: #484848;
+      color: #363636;
       font-size: 1.25em;
+    }
+    .description {
+      line-height: 1.4em;
+    }
+    .external-link {
+      margin-top: 1em;
+      color: #484848;
+    }
+    .external-link .external-title {
+      font-size: 0.75em;
+      margin-bottom: 0.5em;
+      color: #686868;
+    }
+    .external-link .external-each {
+      display: inline-block;
+      margin-right: 0.5em;
+    }
+    .external-link .fa {
+      font-size: 1.5em;
     }
 
     .image-wrapper {
@@ -49,5 +81,6 @@
     this.img = opts.img;
     this.title = opts.title;
     this.description = opts.description;
+    this.links = opts.links;
   </script>
 </work-card>
