@@ -21,8 +21,9 @@
 
   <style scoped>
     .work-card {
-      color: #333;
       border-radius: 5px;
+      overflow: hidden;
+      color: #333;
       background: #fff;
       transition: all 0.5s;
       box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.01);
@@ -42,10 +43,11 @@
       margin-bottom: 0.5em;
     }
     .content .wc-title {
-      color: #363636;
+      color: #484848;
       font-size: 1.25em;
     }
     .description {
+      color: #565656;
       line-height: 1.4em;
     }
     .external-link {
@@ -66,10 +68,9 @@
     }
 
     .image-wrapper {
-      border-radius: 5px 0px 0px 5px;
       width: 100%;
       height: 100%;
-      min-height: 160px;
+      min-height: 200px;
       background-color: #181818;
 
       background-size: cover;
