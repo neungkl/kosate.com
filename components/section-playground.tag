@@ -114,12 +114,18 @@
       {
         img: 'clickhere.jpg',
         title: 'Click Here',
-        description: 'Simply game that you must click "Click Here" button to solve the task.'
+        description: 'Simply game that you must click "Click Here" button to solve the task.',
+        links: {
+          'flash': 'http://kosate.com/old-site/blog/?id=3'
+        }
       },
       {
         img: 'clickhere2.jpg',
         title: 'Click Here 2',
-        description: 'Simply game that you must DOUBLE click "Click Here" button to solve the task.'
+        description: 'Simply game that you must DOUBLE click "Click Here" button to solve the task.',
+        links: {
+          'flash': 'http://kosate.com/old-site/blog/?id=4'
+        }
       },
       {
         img: 'substring-clock.png',
