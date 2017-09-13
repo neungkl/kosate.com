@@ -23,6 +23,7 @@
     </div>
   </section>
   <section-playground></section-playground>
+  <section-work></section-work>
 
   <style scoped>
     #section-title {

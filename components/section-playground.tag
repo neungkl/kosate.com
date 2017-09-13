@@ -11,11 +11,11 @@
       </div>
       <div each={ itemGroup in items } class="columns">
         <div each={ item in itemGroup } class="column is-half ">
-          <work-card
+          <playground-card
             img={ item.img }
             title={ item.title }
             description={ item.description }
-            links={ item.links }></work-card>
+            links={ item.links }></playground-card>
         </div>
       </div>
     </div>

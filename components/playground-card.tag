@@ -1,11 +1,9 @@
-<work-card>
-  <div class="work-card">
+<playground-card>
+  <div class="playground-card">
     <div class="columns is-gapless is-mobile">
-      <div class="column">
+      <div class="column is-half-tablet is-one-third-desktop">
         <div class="image-wrapper" style={ "background-image: url(../images/playground/" + img + ")" }></div>
       </div>
-    </div>
-    <div class="columns is-gapless is-mobile">
       <div class="column">
         <div class="content">
           <div class="wc-title">{ title }</div>
@@ -22,11 +20,7 @@
   </div>
 
   <style scoped>
-    .columns.is-gapless:not(:last-child) {
-      margin-bottom: 0.75em;
-    }
-
-    .work-card {
+    .playground-card {
       border-radius: 5px;
       overflow: hidden;
       color: #333;
@@ -34,7 +28,7 @@
       transition: all 0.5s;
       box-shadow: 0px 0px 5px 5px rgba(0,0,0,0.01);
     }
-    .work-card:hover {
+    .playground-card:hover {
       box-shadow: 0px 0px 10px 10px rgba(0,0,0,0.03);
     }
 
@@ -76,7 +70,7 @@
     .image-wrapper {
       width: 100%;
       height: 100%;
-      min-height: 300px;
+      min-height: 170px;
       background-color: #181818;
 
       background-size: cover;
@@ -90,4 +84,4 @@
     this.description = opts.description;
     this.links = opts.links;
   </script>
-</work-card>
+</playground-card>
