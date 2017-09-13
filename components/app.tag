@@ -17,7 +17,7 @@
         <div class="external-ref">
           <a href="https://github.com/neungkl/" target="_blank"><i class="fa fa-github"></i></a>
           <a href="https://www.linkedin.com/in/kosate" target="_blank"><i class="fa fa-linkedin"></i></a>
-          <i class="fa fa-medium"></i>
+          <a href="https://medium.com/kosate" target="_blank"><i class="fa fa-medium"></i></a>
         </div>
       </div>
     </div>

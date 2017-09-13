@@ -10,7 +10,7 @@
         My mini interactive stuffs
       </div>
       <div each={ itemGroup in items } class="columns">
-        <div each={ item in itemGroup } class="column is-half">
+        <div each={ item in itemGroup } class="column is-half ">
           <work-card
             img={ item.img }
             title={ item.title }

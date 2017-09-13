@@ -1,7 +1,7 @@
 <work-card>
   <div class="work-card">
-    <div class="columns is-gapless">
-      <div class="column is-one-third">
+    <div class="columns is-gapless is-mobile">
+      <div class="column is-half-tablet is-one-third-desktop">
         <div class="image-wrapper" style={ "background-image: url(../images/playground/" + img + ")" }></div>
       </div>
       <div class="column">
@@ -70,7 +70,7 @@
     .image-wrapper {
       width: 100%;
       height: 100%;
-      min-height: 200px;
+      min-height: 170px;
       background-color: #181818;
 
       background-size: cover;
