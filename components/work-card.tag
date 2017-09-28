@@ -2,13 +2,13 @@
   <div class="work-card">
     <div class="columns is-gapless is-mobile">
       <div class="column">
-        <div class="image-wrapper" style={ "background-image: url(../images/playground/" + img + ")" }></div>
+        <div class="image-wrapper" style={ "background-image: url(../images/work/" + img + ")" }></div>
       </div>
     </div>
     <div class="columns is-gapless is-mobile">
       <div class="column">
         <div class="content">
-          <div class="wc-title">{ title }</div>
+          <div class="wc-title"><a href={ headLink } target="_blank">{ title }</a></div>
           <div class="description">{ description }</div>
           <div class="external-link" if={ links }>
             <div class="external-title">External Link</div>
@@ -89,5 +89,6 @@
     this.title = opts.title;
     this.description = opts.description;
     this.links = opts.links;
+    this.headLink = Object.values(opts.links)[0] || null;
   </script>
 </work-card>

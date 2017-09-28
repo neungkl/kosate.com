@@ -7,10 +7,10 @@
           ]} time={ 2000 }></text-switching>
       </h1>
       <div class="subtitle">
-        List of sample of my works
+        Sample side project of my personal works
       </div>
       <div each={ itemGroup in items } class="columns">
-        <div each={ item in itemGroup } class="column is-half ">
+        <div each={ item in itemGroup } class="column is-one-third">
           <work-card
             img={ item.img }
             title={ item.title }
@@ -32,11 +32,19 @@
   <script>
     this.items = [
       {
-        img: 'run-together.png',
-        title: 'Run Together',
-        description: 'Side scrolling game that you must control two characters at the same time to avoid the obstacles.',
+        img: 'fb-analysis.png',
+        title: 'Facebook Active Time Analysis',
+        description: 'Bot crawler with Facebook API to collect post/comment timestamp of Thailand users on various popular pages, and visualize it to a graph.',
         links: {
-          'android': 'https://play.google.com/store/apps/details?id=com.huskybear.runtogether'
+          'github': 'https://github.com/neungkl/fb-active-time-analysis'
+        }
+      },
+      {
+        img: 'instant-grader.png',
+        title: 'Instant Grader CLI',
+        description: 'An automatic tools, helpful in competitive competition, it can split test-case data that embedded along with your code without extend another test files.',
+        links: {
+          'github': 'https://github.com/neungkl/instant-grader-cli'
         }
       }
     ];
