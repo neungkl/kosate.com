@@ -1,16 +1,17 @@
 <section-playground>
-  <section class="section">
+  <section class="section pt-5 pb-2">
     <div class="container">
-      <h1 class="title font-light">
+      <h2 class="title font-light">
+        <i class="fa fa-file-code-o"></i>
         <text-switching message={[
             'Playground'
           ]} time={ 2000 }></text-switching>
-      </h1>
-      <div class="subtitle">
-        My mini interactive stuffs
+      </h2>
+      <div class="subtitle pb-3">
+        My mini interactive stuffs.
       </div>
-      <div each={ itemGroup in items } class="columns">
-        <div each={ item in itemGroup } class="column is-half ">
+      <div each={ itemGroup in items } class="row">
+        <div each={ item in itemGroup } class="col-12 col-sm-6 mb-4">
           <playground-card
             img={ item.img }
             title={ item.title }
@@ -23,9 +24,10 @@
 
   <style scoped>
     .subtitle {
-      padding-top: 0.25em;
-      font-size: 1.1em;
       color: #484848;
+    }
+    .title .fa {
+      font-size: 0.95em;
     }
   </style>
 

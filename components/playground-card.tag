@@ -1,16 +1,16 @@
 <playground-card>
   <div class="playground-card">
-    <div class="columns is-gapless is-mobile">
-      <div class="column is-half-tablet is-one-third-desktop">
+    <div class="row">
+      <div class="col-12 col-lg-5 pr-lg-0">
         <div class="image-wrapper" style={ "background-image: url(../images/playground/" + img + ")" }></div>
       </div>
-      <div class="column">
-        <div class="content">
+      <div class="col pl-lg-0">
+        <div class="content px-4 py-3">
           <div class="wc-title"><a href={ headLink } target="_blank">{ title }</a></div>
-          <div class="description">{ description }</div>
-          <div class="external-link" if={ links }>
-            <div class="external-title">External Link</div>
-            <div class="external-each" each={ link,name in links }>
+          <div class="description mt-1">{ description }</div>
+          <div class="external-link mt-3" if={ links }>
+            <div class="external-title mb-2">External Link</div>
+            <div class="external-each mr-2" each={ link,name in links }>
               <a href={ link } target="_blank"><i class={ "fa fa-" + name } /></a>
             </div>
           </div>
@@ -34,14 +34,13 @@
 
     a {
       color: inherit;
+      cursor: pointer;
+    }
+    a:hover {
+      color: #1c97bc;
+      text-decoration: none;
     }
 
-    .content {
-      padding: 1em 1.5em;
-    }
-    .content > div {
-      margin-bottom: 0.5em;
-    }
     .content .wc-title {
       color: #484848;
       font-size: 1.25em;
@@ -51,17 +50,14 @@
       line-height: 1.4em;
     }
     .external-link {
-      margin-top: 1em;
       color: #484848;
     }
     .external-link .external-title {
       font-size: 0.75em;
-      margin-bottom: 0.5em;
       color: #686868;
     }
     .external-link .external-each {
       display: inline-block;
-      margin-right: 0.5em;
     }
     .external-link .fa {
       font-size: 1.5em;
@@ -70,7 +66,7 @@
     .image-wrapper {
       width: 100%;
       height: 100%;
-      min-height: 170px;
+      min-height: 210px;
       background-color: #181818;
 
       background-size: cover;
