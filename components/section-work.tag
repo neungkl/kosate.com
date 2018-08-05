@@ -4,7 +4,7 @@
       <h2 class="title font-light">
         <i class="fa fa-cubes"></i>
         <text-switching message={[
-            'Another Works'
+            'Other Works'
           ]} time={ 2000 }></text-switching>
       </h2>
       <div class="subtitle pb-3">
