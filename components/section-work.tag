@@ -17,7 +17,8 @@
             title={ item.title }
             description={ item.description }
             note={ item.note }
-            links={ item.links }></work-card>
+            links={ item.links }
+            background-position={ item.backgroundPosition }></work-card>
         </div>
       </div>
     </div>
@@ -57,13 +58,22 @@
         description: 'Codecheer project is a web-application for solving the problem when dealing with card stunts in sport day event in my school.',
         links: {
           'desktop': 'http://kosate.com/codecheer/'
-        }
-      }
+        },
+      },
+      {
+        img: 'kozartae.jpg',
+        title: 'Kozartae Website',
+        description: 'My old blog website. Created just for fun :D',
+        links: {
+          'desktop': 'http://kosate.com/old-site/'
+        },
+        backgroundPosition: 'top center'
+      },
     ];
 
     this.on('before-mount', function() {
       var items = [];
-      var perGroup = 3;
+      var perGroup = 2;
       for(var i = 0; i < this.items.length; i += perGroup) {
         var group = [];
         for(var j=0; j<perGroup; j++) {

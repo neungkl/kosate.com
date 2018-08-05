@@ -2,7 +2,10 @@
   <div class="work-card">
     <div class="row">
       <div class="col-12 col-md-6 col-lg-12 pr-md-0">
-        <div class="image-wrapper" style={ "background-image: url(../images/work/" + img + ")" }></div>
+        <div class="image-wrapper" style={ 
+          "background-image: url(../images/work/" + img + "); " +
+          "background-position: " + backgroundPosition + ";"
+        }></div>
       </div>
       <div class="col pl-md-0 pl-lg-3">
         <div class="content px-4 py-3">
@@ -93,5 +96,7 @@
     this.links = opts.links;
     this.note = opts.note;
     this.headLink = Object.values(opts.links)[0] || null;
+    console.log(opts);
+    this.backgroundPosition = opts.backgroundPosition || "center center";
   </script>
 </work-card>

@@ -14,6 +14,7 @@
       </div>
       <div class="font-light">I'm just ordinary guy who love to code.</div>
       <div class="external-ref">
+        <a href="https://twitter.com/neungkl/" target="_blank"><i class="fa fa-twitter"></i></a>
         <a href="https://github.com/neungkl/" target="_blank"><i class="fa fa-github"></i></a>
         <a href="https://www.linkedin.com/in/kosate" target="_blank"><i class="fa fa-linkedin"></i></a>
         <a href="https://medium.com/kosate" target="_blank"><i class="fa fa-medium"></i></a>
